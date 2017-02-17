@@ -3,7 +3,7 @@ describe 'Genre Associations' do
     @genre = Genre.create(name: "Hip Hop")
   end
 
-  after do 
+  after do
     clean_database
   end
 
@@ -23,5 +23,5 @@ describe 'Genre Associations' do
 
     expect(@genre.artists).to include(artist)
   end
-  
+
 end
